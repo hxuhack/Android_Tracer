@@ -1,0 +1,14 @@
+#ifndef __JAVAPAYLOAD__H__
+#define __JAVAPAYLOAD__H__
+
+extern "C" {
+    #include "Utils/fiatlog.h"
+}
+
+#include <jni.h>
+#include <Utils/JniHelper.h>
+#include "HookDvm.h"
+
+extern "C" int java_hook_entry();
+
+#endif
